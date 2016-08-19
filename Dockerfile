@@ -1,4 +1,5 @@
 FROM armhf/alpine
+# can be replaced with just "alpine" on a regular PC
 
 RUN apk --update add nodejs
 
