@@ -1,0 +1,10 @@
+FROM alexellis2/node4.x-arm:v6
+
+WORKDIR /root/
+ADD ./package.json ./package.json
+
+RUN npm i
+ADD ./index.js ./index.js
+
+EXPOSE 3000
+CMD ["npm", "start"]
